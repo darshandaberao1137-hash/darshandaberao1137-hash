@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vichart - Premium organic agriculture and herbal products from India. Shop authentic, sustainable, and certified organic products.">
+    <meta name="keywords" content="organic, herbal, agriculture, India, lemongrass, moringa, natural, sustainable">
+    <meta name="author" content="Vichart">
+    <meta property="og:title" content="Vichart - Premium Organic & Herbal Products">
+    <meta property="og:description" content="Authentic organic agriculture and herbal products from India">
+    <meta property="og:type" content="website">
+    <title>Vichart - Premium Organic & Herbal Products from India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">🌿 Vichart</div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#mission" class="nav-link">Mission</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <span>🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Vichart</h1>
+            <p>Premium Organic Agriculture & Herbal Products from India</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-background">🌾</div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Vichart</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Vichart is dedicated to bringing authentic, sustainable, and certified organic products from Indian agriculture to the world. We believe in the power of nature and the importance of sustainable farming practices.</p>
+                    <p>Our mission is to support local farmers, promote organic agriculture, and deliver premium herbal products that enhance well-being while protecting our planet.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Farmers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">🌱</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Premium Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">🍵</div>
+                    <h3>Lemongrass Tea</h3>
+                    <p class="product-category">Organic Herbal Tea</p>
+                    <p class="product-description">Pure organic lemongrass leaves, hand-picked and dried. Perfect for relaxation and digestion.</p>
+                    <div class="product-features">
+                        <span class="feature">100% Organic</span>
+                        <span class="feature">No Additives</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">$12.99</span>
+                        <span class="unit">/250g</span>
+                    </div>
+                    <button class="btn btn-primary btn-small" onclick="addToCart('Lemongrass Tea', 12.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">💚</div>
+                    <h3>Moringa Powder</h3>
+                    <p class="product-category">Superfood Supplement</p>
+                    <p class="product-description">Nutrient-rich moringa powder packed with vitamins and minerals. A superfood for daily wellness.</p>
+                    <div class="product-features">
+                        <span class="feature">High Protein</span>
+                        <span class="feature">Antioxidants</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">$18.99</span>
+                        <span class="unit">/200g</span>
+                    </div>
+                    <button class="btn btn-primary btn-small" onclick="addToCart('Moringa Powder', 18.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <h3>Herbal Roll-On</h3>
+                    <p class="product-category">Natural Aromatherapy</p>
+                    <p class="product-description">Soothing herbal roll-on with essential oils. Perfect for tension relief and relaxation.</p>
+                    <div class="product-features">
+                        <span class="feature">Pure Oils</span>
+                        <span class="feature">Portable</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">$9.99</span>
+                        <span class="unit">/10ml</span>
+                    </div>
+                    <button class="btn btn-primary btn-small" onclick="addToCart('Herbal Roll-On', 9.99)">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">🍯</div>
+                    <h3>Stevia Sweetener</h3>
+                    <p class="product-category">Natural Sweetener</p>
+                    <p class="product-description">Zero-calorie natural stevia sweetener. Perfect for health-conscious individuals.</p>
+                    <div class="product-features">
+                        <span class="feature">Zero Calories</span>
+                        <span class="feature">Natural</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">$14.99</span>
+                        <span class="unit">/100g</span>
+                    </div>
+                    <button class="btn btn-primary btn-small" onclick="addToCart('Stevia Sweetener', 14.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2>Our Mission & Values</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">🌍</div>
+                    <h3>Sustainability</h3>
+                    <p>Committed to eco-friendly farming practices that protect our planet for future generations.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">🌐</div>
+                    <h3>Global Impact</h3>
+                    <p>Bringing Indian agricultural excellence to the world, one product at a time.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">👥</div>
+                    <h3>Community</h3>
+                    <p>Supporting local farmers and creating opportunities for rural communities across India.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">✨</div>
+                    <h3>Quality</h3>
+                    <p>Ensuring premium quality through rigorous testing and international certifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2>International Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <p>USDA Organic Certified</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">⭐</div>
+                    <p>ISO 9001:2015</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🤝</div>
+                    <p>Fair Trade Certified</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🇪🇺</div>
+                    <p>EU Organic Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <p>123 Organic Lane, New Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@vichart.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <div>
+                            <strong>Business Hours</strong>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM IST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Inquiry Type</option>
+                            <option value="product">Product Information</option>
+                            <option value="wholesale">Wholesale Inquiry</option>
+                            <option value="export">Export Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        I agree to receive updates and newsletters
+                    </label>
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>About Vichart</h4>
+                    <p>Premium organic agriculture and herbal products from India, supporting sustainable farming and local communities.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">𝕏</a>
+                        <a href="#" title="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#mission">Mission</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Lemongrass Tea</a></li>
+                        <li><a href="#products">Moringa Powder</a></li>
+                        <li><a href="#products">Herbal Roll-On</a></li>
+                        <li><a href="#products">Stevia Sweetener</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email" id="newsletterEmail">
+                        <button class="btn btn-small" onclick="subscribeNewsletter()">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vichart. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20Vichart%21%20I%20have%20an%20inquiry%20about%20your%20products." 
+       class="whatsapp-float" 
+       target="_blank" 
+       title="Chat on WhatsApp">
+        💬 WhatsApp
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
