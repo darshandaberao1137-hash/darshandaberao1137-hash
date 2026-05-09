@@ -1,3 +1,58 @@
+# Hi, I'm Darshan 👋
+
+Founder of Vichart & OrganicFoodForWorld
+
+## About Me
+
+I am building:
+- Organic agriculture projects
+- Herbal wellness products
+- AI + Agriculture systems
+- Tribal development initiatives
+
+---
+
+## Brands
+
+### Vichart
+Organic agriculture and innovation company.
+
+### OrganicFoodForWorld
+Chemical-free wellness products from India.
+
+---
+
+## Current Focus
+
+- Herbal Tea Brand
+- Moringa Products
+- Herbal Roll-On
+- Sustainable Farming
+- Export Systems
+
+---
+
+## Vision
+
+To build globally trusted organic brands from India.
+
+---
+
+## Skills
+
+- Branding
+- Content Creation
+- AI Tools
+- Organic Farming
+- Digital Marketing
+
+---
+
+## Projects
+
+- Herbal Sip
+- OrganicFoodForWorld
+- Tribal Development Projects
 ## Hi there 👋
 
 <!--
